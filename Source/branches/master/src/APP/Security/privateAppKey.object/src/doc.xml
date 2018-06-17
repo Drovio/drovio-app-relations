@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Security" namespace="\">
+  <class name="privateAppKey" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1446578893</datecreated>
+      <daterevised>1446578893</daterevised>
+      <extends>
+        <object>\AEL\Security\privateKey</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Application private key validator.</title>
+      <description>Extends the Application private key interface and can validate the received key from the API request.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="validate" returntype="boolean" static="true">
+          <description>Validate whether the request akey is private and valid for the team it represents.</description>
+          <parameters/>
+          <returndescription>True if valid, false otherwise.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeamID" returntype="integer" static="true">
+          <description>Get the team id from the given api key.</description>
+          <parameters/>
+          <returndescription>The team id or NULL on error.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="getAPIKey" returntype="string" static="true">
+          <description>Get the current request api key.</description>
+          <parameters/>
+          <returndescription>The API key.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

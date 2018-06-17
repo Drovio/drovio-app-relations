@@ -1,0 +1,122 @@
+.relationsListView {
+	margin-top: 20px;
+}
+.relationsListView .listContainer {
+	display: block;
+}
+.relationsListView .listContainer .searchContainer {
+	background: #FFF;
+	overflow: auto;
+	border: 1px solid #DDD;
+	margin: 12px 0px;
+}
+
+.relationsListView .listContainer .searchContainer .searchIco {
+	float: right;
+	width: 20px;
+	height: 20px;
+	background: url('%{media}/icons/iconSprite.svg') no-repeat center;
+	background-size: cover;
+	background-position: 0px -20px;
+	overflow: hidden;
+	margin: 6px;
+}
+
+.relationsListView .listContainer .searchContainer .searchInput {
+	float: left;
+	line-height: 16px;
+	font-size: 12px;
+	padding: 8px 12px;
+	border: none;
+	width: 90%;
+	outline: none;
+	color: #555;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+.relationsListView .listContainer .listItem {
+	border: 1px solid #E8E8E8;
+	border-bottom: none;
+	background: #FFF;
+	padding: 10px;
+	line-height: 24px;
+	flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	position: relative;
+	cursor: pointer;
+}
+
+.relationsListView .listContainer .listItem:last-child {
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.relationsListView .listContainer .listItem .ico {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url('%{media}/icons/profile.svg') no-repeat center;
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.relationsListView .listContainer .listItem .name {
+	font-size: 12px;
+	color: #5E6570;
+	font-weight: bold;
+}
+.relationsListView .detailsContainer {
+	display: none;
+}
+
+.relationsListView .detailsContainer .wbutton {
+	float: left;
+	margin: 10px;
+	margin-top: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #5E6570;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+	padding: 5px 15px;
+	line-height: 20px;
+	font-size: 12px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.relationsListView .detailsContainer .wbutton:hover {
+	 background-color: #5E6570;
+	color: #FFF;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.relationsListView .detailsContainer .wbutton.back .ico {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url('%{media}/icons/iconSprite.svg') no-repeat center;
+	background-size: cover;
+	background-position: 0px -40px;
+	margin-right: 10px;
+}
+
+.relationsListView .detailsContainer .wbox.details {
+	clear: both;
+	padding: 10px;
+	margin-top: 10px;
+}
+.relationsListView.details .listContainer {
+	display: none;
+}
+
+.relationsListView.details .detailsContainer {
+	display: block;
+}

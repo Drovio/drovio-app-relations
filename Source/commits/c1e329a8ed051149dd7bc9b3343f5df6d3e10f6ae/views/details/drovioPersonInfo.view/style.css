@@ -1,0 +1,44 @@
+.personInfoContainer .infoRow {
+	overflow: auto;
+	margin: 10px 5px;
+	line-height: 24px;
+	padding: 3px 5px;
+}
+
+.personInfoContainer .infoRow .ico {
+	float: left;
+	background: url('%{media}/icons/contactInfoSprite.svg') no-repeat;
+	width: 24px;
+	height: 24px;
+	background-size: cover;
+	margin: 0px 5px;
+	margin-right: 15px;
+	opacity: 0.7;
+	background-position: 0px 0px;
+}
+
+.personInfoContainer .infoRow.phone .ico {
+	background-position: 0px -24px;
+}
+
+.personInfoContainer .infoRow.mail .ico {
+	background-position: 0px -48px;
+}
+
+.personInfoContainer .infoRow.address .ico {
+	background-position: 0px -72px;
+}
+
+.personInfoContainer .infoRow.birthday .ico {
+	background-position: 0px -96px;
+}
+
+.personInfoContainer .infoRow .ivalue {
+	font-size: 12px;
+	color: #454A54;
+}
+
+.personInfoContainer .infoRow .ivalue a {
+	color: #4762AD;
+	text-decoration: underline !important;
+}

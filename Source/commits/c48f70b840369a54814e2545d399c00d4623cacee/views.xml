@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views><view name="MainView"/><view name="listViewer"/><view name="createNewContact"/><folder name="create"/><folder name="details"><view name="personDetails"/></folder><view name="appSettings"></view></views>

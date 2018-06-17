@@ -1,0 +1,41 @@
+.personInfoContainer {
+	.infoRow {
+		& {
+			overflow: auto;
+			margin: 10px 5px;
+			line-height: 24px;
+			padding: 3px 5px;
+		}
+		.ico {
+			float: left;
+			background: url('%{media}/icons/contactInfoSprite.svg') no-repeat;
+			width: 24px;
+			height: 24px;
+			background-size: cover;
+			margin: 0px 5px;
+			margin-right: 15px;
+			opacity: 0.7;
+			background-position: 0px 0px;
+		}
+		&.phone .ico {
+			background-position: 0px -24px;
+		}
+		&.mail .ico {
+			background-position: 0px -48px;
+		}
+		&.address .ico {
+			background-position: 0px -72px;
+		}
+		&.birthday .ico {
+			background-position: 0px -96px;
+		}
+		.ivalue {
+			font-size: 12px;
+			color: #454A54;
+		}
+		.ivalue a {
+			color: #4762AD;
+			text-decoration: underline !important;
+		}
+	}
+}

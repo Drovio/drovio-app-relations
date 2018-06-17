@@ -1,0 +1,22 @@
+jq = jQuery.noConflict();
+jq(document).one("ready", function() {
+	// Edit action
+	jq(document).on("click", ".editContactInfo .close_ico", function() {
+		// Trigger to cancel edit
+		jq(document).trigger("contactinfo.cancel_edit");
+	});
+	
+	// Add new row action
+	jq(document).on("click", ".editContactInfo .editGroup .ico.create_new", function() {
+		// Get first new form row and clone
+		var frow = jq(this).closest(".editGroup").find(".frow.new").first().clone(true);
+		frow.find("input").val("");
+		jq(this).closest(".editGroup").find(".frow.new").last().after(frow);
+	});
+	
+	// Remove row
+	jq(document).on("click", ".editContactInfo .frow .ico.remove", function() {
+		// Get row and remove
+		jq(this).closest(".frow").remove();
+	});
+});

@@ -1,0 +1,85 @@
+.customInfoContainer {
+	.viewContainer .edit {
+		float: right;
+		cursor: pointer;
+		width: 18px;
+		height: 18px;
+		background: url('%{media}/icons/iconSprite.svg') no-repeat center;
+		background-position: 0px -54px;
+		background-size: cover;
+		opacity: 0.7;
+		transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+	}
+	.viewContainer .edit:hover {
+		opacity: 1;
+		transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+	}
+	.infoRow {
+		& {
+			overflow: auto;
+			margin: 10px 5px;
+			line-height: 24px;
+			padding: 3px 5px;
+		}
+		.ico {
+			float: left;
+			background: url('%{media}/icons/contactInfoSprite.svg') no-repeat;
+			width: 24px;
+			height: 24px;
+			background-size: cover;
+			margin: 0px 5px;
+			margin-right: 15px;
+			opacity: 0.7;
+		}
+		&.phone .ico {
+			background-position: 0px -24px;
+		}
+		&.mail .ico {
+			background-position: 0px -48px;
+		}
+		&.address .ico {
+			background-position: 0px -72px;
+		}
+		&.birthday .ico {
+			background-position: 0px -96px;
+		}
+		&.notes .ico {
+			background-position: 0px -120px;
+		}
+		.iname {
+			float: left;
+			font-size: 1em;
+			color: #454A54;
+			white-space: pre-wrap;
+			font-weight: bold;
+			min-width: 50px;
+			margin-right: 15px;
+		}
+		.ivalue {
+			float: left;
+			font-size: 1em;
+			color: #454A54;
+			white-space: pre-wrap;
+		}
+	}
+	.customInfo {
+		.viewContainer {
+			display: block;
+		}
+		.editFormContainer {
+			display: none;
+		}
+	}
+	.customInfo.edit {
+		.viewContainer {
+			display: none;
+		}
+		.editFormContainer {
+			display: block;
+		}
+	}
+}

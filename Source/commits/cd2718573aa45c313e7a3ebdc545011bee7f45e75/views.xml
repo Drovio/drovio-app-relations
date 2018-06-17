@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views><view name="MainView"/><view name="listViewer"/><view name="createNewContact"/><folder name="create"/><folder name="details"><view name="personDetails"/><view name="customerInfo"/><view name="contactInfo"/><view name="drovioPersonInfo"/><view name="drovioConnect"/><view name="editContactInfo"/><view name="deleteRelation"></view></folder><view name="appSettings"/></views>

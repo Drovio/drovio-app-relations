@@ -1,0 +1,87 @@
+.relationsListView {
+	& {
+		margin-top: 20px;
+	}
+	.listContainer {
+		& {
+			display: block;
+		}
+		.listItem {
+			& {
+				border: 1px solid #E8E8E8;
+				border-bottom: none;
+				background: #FFF;
+				padding: 10px;
+				line-height: 24px;
+				flex: 1;
+				-webkit-flex: 1;
+				-moz-flex: 1;
+				position: relative;
+				cursor: pointer;
+			}
+			&:last-child {
+				border-bottom: 1px solid #E8E8E8;
+			}
+			.ico {
+				float: left;
+				width: 24px;
+				height: 24px;
+				background: url('%{media}/icons/profile.svg') no-repeat center;
+				background-size: cover;
+				margin-right: 10px;
+			}
+			.name {
+				font-size: 12px;
+				color: #5E6570;
+			}
+		}
+	}
+	.detailsContainer {
+		& {
+			display: none;
+		}
+		.wbutton {
+			float: left;
+			margin: 10px;
+			margin-top: 0px;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			border: 1px solid #5E6570;
+			color: #5E6570;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			cursor: pointer;
+			padding: 5px 15px;
+			line-height: 18px;
+			font-size: 12px;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.wbutton:hover {
+			background-color: #5E6570;
+			color: #FFF;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.wbox.details {
+			clear: both;
+			border: 1px solid #E8E8E8;
+			background: #FFF;
+			padding: 10px;
+			margin-top: 10px;
+		}
+	}
+	
+	&.details {
+		.listContainer {
+			display: none;
+		}
+		.detailsContainer {
+			display: block;
+		}
+	}
+}

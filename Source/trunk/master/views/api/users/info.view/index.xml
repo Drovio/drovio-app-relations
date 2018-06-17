@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="info"><sdk_dependencies><dependency library="AEL" object="Identity"></dependency><dependency library="UI" object="Content"></dependency></sdk_dependencies><app_dependencies><dependency library="APP" object="Security"></dependency></app_dependencies></view>

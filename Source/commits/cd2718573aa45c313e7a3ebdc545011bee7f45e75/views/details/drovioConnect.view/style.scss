@@ -1,0 +1,48 @@
+.personInfoContainer {
+	.infoRow {
+		& {
+			overflow: auto;
+			margin: 10px 5px;
+			line-height: 24px;
+			padding: 3px 5px;
+		}
+		.ico {
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: 0px 5px;
+			margin-right: 15px;
+			opacity: 0.7;
+		}
+		.ico:empty {
+			background: url('%{media}/icons/contactInfoSprite.svg') no-repeat;
+			background-size: cover;
+			background-position: 0px 0px;
+		}
+		.ico img {
+			width: inherit;
+			height: inherit;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+		}
+		.iform {
+			float: right;
+		}
+		.iform .no_margin {
+			margin: 0px;
+			display: block;
+		}
+		.ivalue {
+			font-size: 12px;
+			color: #454A54;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.ivalue a {
+			color: #4762AD;
+			text-decoration: underline !important;
+		}
+	}
+}

@@ -1,0 +1,108 @@
+.editContactInfo .close_ico {
+	float: right;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	background: url('%{media}/icons/closeX.svg') no-repeat center;
+	background-position: 0px 0px;
+	background-size: cover;
+	opacity: 0.7;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.editContactInfo .close_ico:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+.editContactInfo .formContainer {
+	clear: both;
+}
+.editContactInfo .formContainer .editGroup {
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+.editContactInfo .formContainer .editGroup .ico.create_new {
+	float: right;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	margin: 10px 5px;
+	background: url('%{media}/icons/actionIcons.svg') no-repeat center;
+	background-position: 0px -64px;
+	background-size: cover;
+	opacity: 0.7;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.editContactInfo .formContainer .editGroup .ico.create_new:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.editContactInfo .formContainer .editGroup .ghd {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	margin: 10px 5px;
+	padding: 3px 0px;
+	color: #5E6570;
+	border-bottom: 1px solid #CCC;
+}
+.editContactInfo .formContainer .editGroup .frow {
+	overflow: auto;
+	margin: 3px 0px;
+}
+
+.editContactInfo .formContainer .editGroup .frow .fselect {
+	border: none;
+	float: left;
+	width: 150px;
+	margin-right: 20px;
+	padding: 3px;
+	outline: none;
+}
+
+.editContactInfo .formContainer .editGroup .frow .finput {
+	float: left;
+	border: none;
+	outline: none;
+	width: 200px;
+}
+
+.editContactInfo .formContainer .editGroup .frow .ico.remove {
+	float: right;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	margin: 3px;
+	background: url('%{media}/icons/closeX.svg') no-repeat center;
+	background-position: 0px 0px;
+	background-size: cover;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.editContactInfo .formContainer .editGroup .frow .ico.remove:hover, .editContactInfo .formContainer .editGroup .frow:hover .ico.remove:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.editContactInfo .formContainer .editGroup .frow:hover .ico.remove {
+	opacity: 0.7;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
